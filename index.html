@@ -3,196 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abel Abraham Panicker - Portfolio</title>
+    <title>Your Name - Full Stack Developer & Database Expert</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">ap2ko5</a>
+                <a href="#home">YOUR_NAME</a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">FULL STACK</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">DEVELOPER</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Abel Abraham Panicker</h1>
-                <p class="hero-subtitle">Full-Stack Developer | Machine Learning Enthusiast | Database Optimization Expert</p>
-                <p class="hero-description">Computer Science Student at KTU | Building innovative solutions with modern tech stacks</p>
-                <div class="hero-buttons">
-                    <a href="https://github.com/ap2ko5" class="btn btn-primary" target="_blank">View GitHub</a>
-                    <a href="https://github.com/ap2ko5/Portfolio-Website/blob/main/README.md" class="btn btn-secondary" target="_blank">View Portfolio</a>
-                </div>
+        <div class="stars-container" id="starsContainer"></div>
+        <div class="animated-bg">
+            <svg class="animated-shape" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(139, 92, 246, 0.4)" stroke-width="2" filter="url(#glow)"/>
+                <circle cx="200" cy="200" r="80" fill="none" stroke="rgba(168, 85, 247, 0.3)" stroke-width="2"/>
+                <path d="M 80 200 Q 200 80 320 200" fill="none" stroke="rgba(139, 92, 246, 0.3)" stroke-width="3"/>
+                <circle cx="200" cy="200" r="40" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="2" stroke-dasharray="20, 10"/>
+            </svg>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">HEY</h1>
+                <p class="hero-subtitle">
+                    I'M A <span class="highlight">FULL STACK DEVELOPER</span> WHO LOVES 
+                    <span class="highlight">DATABASE OPTIMIZATION</span> AND 
+                    <span class="highlight">SYSTEM DESIGN</span>.
+                </p>
+                <p class="hero-description">
+                    I'M CURRENTLY WORKING ON PROJECTS THAT LEVERAGE 
+                    <span class="highlight">EFFICIENT ARCHITECTURE</span> AND 
+                    <span class="highlight">SCALABLE DATABASES</span>
+                </p>
+                <p class="scroll-prompt">SCROLL TO EXPLORE</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I'm a passionate Computer Science student at Kerala Technological University (KTU) with expertise in full-stack development, machine learning, and database optimization. Currently in Semester 5-6, I focus on building scalable applications and solving complex technical problems.</p>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>5+</h3>
-                        <p>Projects</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>100%</h3>
-                        <p>Dedication</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>∞</h3>
-                        <p>Learning</p>
-                    </div>
-                </div>
+    <!-- Developer Section -->
+    <section id="about" class="developer">
+        <div class="developer-content">
+            <div class="dev-text">
+                <h2 class="dev-title">
+                    <span>D</span><span>E</span><span>V</span><span>E</span><span>L</span><span>O</span><span>P</span><span>E</span><span>R</span>
+                </h2>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Faculty Allocation System</h3>
-                    <p>Full-stack application for intelligent faculty-to-course allocation using Python Flask, React, and PostgreSQL.</p>
-                    <a href="https://github.com/ap2ko5/Faculty-Allocation-System" target="_blank" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-robot"></i></div>
-                    <h3>ML Email Automation</h3>
-                    <p>AI-powered email automation system using TensorFlow/Keras LSTM for pattern recognition and intelligent automation.</p>
-                    <a href="https://github.com/ap2ko5/ML-Email-Automation" target="_blank" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>E-Commerce Platform</h3>
-                    <p>Modern e-commerce solution built with React, Node.js, and MongoDB with payment integration and admin dashboard.</p>
-                    <a href="https://github.com/ap2ko5/E-Commerce-Platform" target="_blank" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-database"></i></div>
-                    <h3>Database Optimization Suite</h3>
-                    <p>Advanced performance optimization toolkit for PostgreSQL, MySQL, and Oracle with query optimization strategies.</p>
-                    <a href="https://github.com/ap2ko5/Database-Optimization-Suite" target="_blank" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-tools"></i></div>
-                    <h3>DevOps CLI Toolkit</h3>
-                    <p>Comprehensive CLI toolkit for DevOps automation including Docker, Kubernetes, and deployment automation.</p>
-                    <a href="https://github.com/ap2ko5/DevOps-CLI-Toolkit" target="_blank" class="project-link">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-laptop"></i></div>
-                    <h3>This Portfolio</h3>
-                    <p>A modern, responsive portfolio website showcasing all projects, skills, and experience with clean design.</p>
-                    <a href="https://github.com/ap2ko5/Portfolio-Website" target="_blank" class="project-link">View Project →</a>
-                </div>
+            <div class="about-desc">
+                <p>
+                    I'm a Computer Science student at KTU (Kerala Technological University), 
+                    currently in Semester 5-6, with deep expertise in full-stack development, 
+                    database optimization, and system architecture. When I'm not debugging code, 
+                    I'm learning new technologies, optimizing complex queries, or solving challenging 
+                    system design problems.
+                </p>
+                <p>
+                    I've crafted scalable applications, optimized database performance for complex queries, 
+                    and tackled intricate architectural challenges. My passion lies at the intersection of 
+                    backend performance and elegant frontend design. Let's collaborate and build something impactful together!
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                    </div>
+        <h2 class="section-title">Skills & Expertise</h2>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags" id="skillTags1">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">PL/SQL</div>
+                    <div class="skill-tag">8086 ASM</div>
                 </div>
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">Responsive Design</span>
-                    </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-tags" id="skillTags2">
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">Oracle</div>
+                    <div class="skill-tag">Supabase</div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">REST APIs</span>
-                    </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-tags" id="skillTags3">
+                    <div class="skill-tag">Flask</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Django</div>
+                    <div class="skill-tag">REST APIs</div>
                 </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                    </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-tags" id="skillTags4">
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                    <div class="skill-tag">Tailwind</div>
+                    <div class="skill-tag">GSAP</div>
                 </div>
-                <div class="skill-category">
-                    <h3>DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                    </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>DevOps & Tools</h3>
+                <div class="skill-tags" id="skillTags5">
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">Git/GitHub</div>
+                    <div class="skill-tag">VS Code</div>
+                    <div class="skill-tag">Linux</div>
                 </div>
-                <div class="skill-category">
-                    <h3>Specializations</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Full-Stack Dev</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">System Design</span>
-                    </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Specializations</h3>
+                <div class="skill-tags" id="skillTags6">
+                    <div class="skill-tag">System Design</div>
+                    <div class="skill-tag">DB Optimization</div>
+                    <div class="skill-tag">Full-Stack Dev</div>
+                    <div class="skill-tag">Query Performance</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <h2 class="process-title">HOW I FUNCTION</h2>
+        <div class="process-line"></div>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <span class="step-number">01</span>
+                <h3>REQUIREMENT<br>ANALYSIS</h3>
+            </div>
+            <div class="process-step">
+                <span class="step-number">02</span>
+                <h3>ARCHITECTURE<br>DESIGN</h3>
+            </div>
+            <div class="process-step">
+                <span class="step-number">03</span>
+                <h3>DATABASE<br>PLANNING</h3>
+            </div>
+            <div class="process-step">
+                <span class="step-number">04</span>
+                <h3>DEVELOPMENT</h3>
+            </div>
+            <div class="process-step">
+                <span class="step-number">05</span>
+                <h3>OPTIMIZATION</h3>
+            </div>
+            <div class="process-step">
+                <span class="step-number">06</span>
+                <h3>DEPLOYMENT</h3>
+            </div>
+        </div>
+
+        <div class="tagline">
+            <p class="tagline-text">EFFICIENT SYSTEMS • SCALABLE DESIGN • OPTIMIZED PERFORMANCE • CLEAN CODE • QUALITY SOLUTIONS</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Faculty Allocation System</h3>
+                <p>Full-stack intelligent faculty-to-course allocation using Flask, React, PostgreSQL with optimization algorithms</p>
+                <a href="#" class="project-link" target="_blank">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-robot"></i></div>
+                <h3>ML Email Automation</h3>
+                <p>AI-powered email automation system using LSTM and pattern recognition for intelligent email classification</p>
+                <a href="#" class="project-link" target="_blank">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-database"></i></div>
+                <h3>Database Optimization Suite</h3>
+                <p>Performance optimization toolkit for PostgreSQL and MySQL with query analysis and indexing strategies</p>
+                <a href="#" class="project-link" target="_blank">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+                <h3>E-Commerce Platform</h3>
+                <p>Modern e-commerce solution built with React, Node.js, MongoDB with payment integration and admin dashboard</p>
+                <a href="#" class="project-link" target="_blank">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-tools"></i></div>
+                <h3>DevOps CLI Toolkit</h3>
+                <p>Comprehensive CLI toolkit for DevOps automation including Docker, Kubernetes, and deployment scripting</p>
+                <a href="#" class="project-link" target="_blank">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>System Architecture Project</h3>
+                <p>Designed and implemented scalable microservices architecture with load balancing and fault tolerance</p>
+                <a href="#" class="project-link" target="_blank">View Project →</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <p>I'm always interested in collaborating on interesting projects and contributing to open-source. Feel free to reach out!</p>
-                <div class="social-links">
-                    <a href="https://github.com/ap2ko5" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/abel-abraham-panicker-45a5872a6" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="mailto:abelap2005@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                </div>
-            </div>
+        <h2 class="contact-title">Let's Build Something Great</h2>
+        <p class="contact-desc">
+            I'm always interested in collaborating on interesting projects and exploring new technologies. 
+            Feel free to reach out!
+        </p>
+        
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:your.email@example.com" class="social-link">
+                <i class="fas fa-envelope"></i> Email
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Abel Abraham Panicker. All rights reserved.</p>
-            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
-        </div>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS & JavaScript with GSAP Animations</p>
     </footer>
 
     <script src="script.js"></script>
