@@ -2,15 +2,15 @@
 :root {
     --primary-color: #0f172a;
     --secondary-color: #1e293b;
-    --accent-color: #8b5cf6;
-    --accent-light: #a855f7;
-    --text-light: #e2e8f0;
-    --text-muted: #94a3b8;
-    --border-color: rgba(139, 92, 246, 0.2);
+    --accent-color: #a855f7;
+    --accent-light: #c084fc;
+    --text-light: #f1f5f9;
+    --text-muted: #cbd5e1;
+    --border-color: rgba(192, 132, 252, 0.3);
     --success-color: #10b981;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -68,9 +68,10 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--accent-light);
+    color: #c084fc;
     text-decoration: none;
     transition: color 0.3s ease;
+    text-shadow: 0 0 20px rgba(192, 132, 252, 0.5);
 }
 
 .nav-logo a:hover {
@@ -84,10 +85,10 @@ body {
 }
 
 .nav-link {
-    color: var(--text-light);
+    color: #f1f5f9;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-link:hover {
@@ -164,9 +165,9 @@ body {
 }
 
 .highlight {
-    color: var(--accent-light);
+    color: #c084fc;
     font-weight: 700;
-    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+    text-shadow: 0 0 30px rgba(192, 132, 252, 0.8), 0 0 10px rgba(192, 132, 252, 0.6);
 }
 
 .scroll-prompt {
@@ -200,15 +201,17 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: var(--text-light);
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-weight: 600;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color: #e2e8f0;
     margin-bottom: 2rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -322,18 +325,18 @@ section {
 }
 
 .about-desc {
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     padding: 2.5rem;
     border-radius: 16px;
     border: 1px solid var(--glass-border);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .about-desc p {
     font-size: 1.1rem;
-    color: var(--text-light);
+    color: #f1f5f9;
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
@@ -383,7 +386,7 @@ section {
 }
 
 .process-step {
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     padding: 2rem;
@@ -391,7 +394,7 @@ section {
     border: 1px solid var(--glass-border);
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .process-step:hover {
@@ -403,15 +406,17 @@ section {
 .step-number {
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--accent-light);
+    color: #c084fc;
     display: block;
     margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(192, 132, 252, 0.5);
 }
 
 .process-step h3 {
     font-size: 1.1rem;
-    color: var(--text-light);
+    color: #ffffff;
     line-height: 1.4;
+    font-weight: 600;
 }
 
 .tagline {
@@ -492,7 +497,7 @@ section {
 }
 
 .project-card {
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     padding: 2rem;
@@ -501,7 +506,7 @@ section {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
@@ -513,20 +518,24 @@ section {
 
 .project-icon {
     font-size: 2.5rem;
-    color: var(--accent-light);
+    color: #c084fc;
     margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(192, 132, 252, 0.6);
+    filter: drop-shadow(0 0 10px rgba(192, 132, 252, 0.4));
 }
 
 .project-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: var(--text-light);
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .project-card p {
-    color: var(--text-muted);
+    color: #e2e8f0;
     margin-bottom: 1.5rem;
     flex-grow: 1;
+    line-height: 1.6;
 }
 
 .project-link {
@@ -556,14 +565,14 @@ section {
 }
 
 .skill-category {
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(30, 41, 59, 0.6);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     padding: 2rem;
     border-radius: 16px;
     border: 1px solid var(--glass-border);
     transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .skill-category:hover {
@@ -573,9 +582,11 @@ section {
 }
 
 .skill-category h3 {
-    color: var(--accent-light);
+    color: #c084fc;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
 }
 
 .skill-tags {
@@ -585,16 +596,16 @@ section {
 }
 
 .skill-tag {
-    background: rgba(139, 92, 246, 0.15);
+    background: rgba(192, 132, 252, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: var(--text-light);
+    color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    border: 1px solid rgba(139, 92, 246, 0.3);
+    border: 1px solid rgba(192, 132, 252, 0.4);
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .skill-tag:hover {
@@ -651,16 +662,16 @@ section {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: rgba(139, 92, 246, 0.1);
+    background: rgba(192, 132, 252, 0.15);
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
-    color: var(--accent-light);
+    color: #c084fc;
     text-decoration: none;
     border-radius: 12px;
-    border: 1px solid var(--glass-border);
+    border: 1px solid rgba(192, 132, 252, 0.4);
     transition: all 0.3s ease;
     font-weight: 600;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .social-link:hover {
